@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    
+}
+
+h1{
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("../images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+header{
+    padding: 4rem;
+}
+header .logo {
+    width: 250px;
+    height: auto;
+  }
+
+.data{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 4rem;
+}
+main .mockup{
+    background-image: url("../images/illustration-mockups.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    width: 150%;
+}
+main .content {
+    line-height: 1.5;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  main .heading{
+      padding-bottom: 10px;
+      
+  }
+  main .para{
+      margin-bottom: 20px;
+  }
+  main .button {
+    
+    color: #674baf;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: #fff;
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 1.4rem;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+  }
+
+  footer {
+    padding: 4rem 4rem 1rem 4rem;
+  }
+footer .socials{
+    text-align: end;
+
+}
+
+footer .social_icon span{
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.fab{
+    text-align: center;
+    padding-top: 5px;
+}
+
+footer .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  footer .attribution a {
+    font-size: 11px;
+  }
+
+
+  main .button:hover{
+      background-color: hsl(300, 69%, 71%);
+      color: white;
+  }
+
+  footer .social_icon span:hover{
+      border-color: hsl(300, 69%, 71%);
+  }
+
+  .fab:hover{
+      color: hsl(300, 69%, 71%);
+  } 
+
+@media screen and (max-width: 1280px) {
+    main .heading{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container{
+        background-image: url(../images/bg-mobile.png);
+    }
+
+    header {
+        padding: 2rem 1rem;
+      }
+    header .logo {
+        width: 150px;
+        height: auto;
+      }
+
+    .data{
+        flex-direction: column;
+      flex-grow: 1;
+      padding: 1rem;
+    }
+
+    main .mockup {
+        height: 300px;
+        width: auto;
+        flex-grow: 1;
+      }
+
+    main .content{
+        width: auto;
+      text-align: center;
+      margin: 1rem;
+    }
+
+    main .heading {
+        font-size: 1.3rem;
+      }
+    main .para {
+        font-size: 1rem;
+        margin: 2rem 0;
+      }
+    main .button {
+        border-radius: 30px;
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1rem;
+      }
+
+    footer {
+        padding: 1rem;
+      }
+    footer .socials {
+        text-align: center;
+        margin: 1rem 0;
+      }
+
+    footer .social_icon:hover{
+        border-color: hsl(300, 69%, 71%);
+    }
+
+    .fab:hover{
+        color: hsl(300, 69%, 71%);
+    }
+
+    main.button:hover{
+        background-color: hsl(300, 69%, 71%);
+        color: white;
+    }
+
+    footer .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+    footer .attribution a {
+        font-size: 11px;
+      }
+}
